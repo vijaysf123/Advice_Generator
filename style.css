@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: var(--Dark-Blue);
+}
+
+main {
+    background-color: var(--Dark-Grayish-Blue);
+    height: auto;
+    width: 47rem;
+    border-radius: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3rem;
+    align-items: center;
+}
+
+.eg_num{
+    color: var(--Neon-Green);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+}
+
+p.eg_quote {
+    color: var(--Light-Cyan);
+    font-size: 2.5rem;
+    margin: 0;
+    padding-inline: 3rem;
+}
+
+.eg_btm_lin {
+    padding-block: 3rem;
+}
+
+.eg_dice {
+    background: var(--Neon-Green);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-grid;
+    place-items: center;
+    margin-bottom: -2rem;
+    cursor: pointer;
+}
+
+.eg_dice:hover{
+    box-shadow: 0 0 21px 3px var(--Neon-Green);    ;
+}
+
+
+@media screen and (max-width: 420px) {
+    main{
+        width: 34rem;
+    }
+    svg {
+        width: 200px;
+    }
+}
